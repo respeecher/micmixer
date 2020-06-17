@@ -238,7 +238,7 @@ trap clean_up INT
 echo
 echo "Wow, looks like it didn't crash!"
 echo
-echo "* * * * * * * * * * * * *"
+echo "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
 echo
 echo "If you want to use this to mix in system sounds to your voice chat," \
      "do the following:"
@@ -247,7 +247,7 @@ echo "  * go to the 'Recording' tab"
 echo "  * find your browser's recording stream and select 'Monitor of" \
      "MicAndSystemSink' in the dropdown."
 echo
-echo "* * * * * * * * * * * * *"
+echo "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
 echo
 echo
 
