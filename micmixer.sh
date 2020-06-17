@@ -75,7 +75,7 @@ function check_module() {
     if [ -z "$1" ]
     then
         echo
-        echo "Error: something went wrond and we didn't get the module ID" \
+        echo "Error: something went wrong and we didn't get the module ID" \
             "from pulseaudio. Check the error above to see if anything can" \
             "be done about it. Aborting..."
         clean_up
@@ -132,10 +132,10 @@ command -v pacmd >/dev/null 2>&1 || {
    exit 1;
 }
 command -v pavucontrol >/dev/null 2>&1 || {
-   echo >&2 "Couldn't find pavucontrol! Please install pavucontrol because"
-            "you'll need it to use the virtual mic (unless you are a pacmd guru"
-            "of course, in which case you should just comment this check and"
-            "run the script again. Aborting for now.";
+   echo >&2 "Couldn't find pavucontrol! Please install pavucontrol because"\
+            "you'll need it to use the virtual mic (unless you are a pacmd guru"\
+            "of course, in which case you should just comment out this check"\
+            "and run the script again. Aborting for now.";
    exit 1;
 }
 
@@ -153,7 +153,7 @@ echo
 echo -e "Default sink:\t\t${default_sink}"
 echo -e "Default source:\t\t${default_source}"
 echo 
-read  -n 1 -p "If it looks good to you, hit Enter to proceed or ^C to exit:" inp
+read  -n 1 -p "If this looks good to you, hit Enter to proceed or ^C to exit:"
 echo
 echo "Awesome, let's go!"
 
