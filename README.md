@@ -15,3 +15,12 @@ Run the script **as a regular user** and follow the instructions
 ```bash
 $ chmod +x micmixer.sh  # if necessary
 $ ./micmixer.sh
+```
+After you hit `^C` it will try to undo all the changes. Note that all the
+changes made by this script are non-root and run-time (i.e. it doesn't
+modify any config files). Therefore, in case anything goes wrong things
+should get back to normal after a reboot or
+```
+$ killall pulseaudio
+```
+:)
